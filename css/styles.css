@@ -1,0 +1,12 @@
+.radar {
+	position: absolute;
+	right: 30px;
+}
+nav{
+	font-family: 'Ravi Prakash', cursive;
+}
+.dropdown-button{
+	position: fixed;
+	font-size: 30px;
+	right: 210px;
+}
