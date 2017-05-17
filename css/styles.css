@@ -3,7 +3,7 @@ nav{
 	font-family: 'Ravi Prakash', cursive;
 }
 .dropdown-button{
-	position: fixed;
+	position: static;
 	font-size: 30px;
 	right: 210px;
 }
