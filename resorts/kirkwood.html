@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
-		<link rel="stylesheet" href="../css/styles.css">
-		<script
-		src="https://code.jquery.com/jquery-3.2.1.min.js"
-		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-		crossorigin="anonymous">
-		</script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-
 		<meta charset="utf-8">
 		<title>LT SKI</title>
-		<script type="text/javascript" src="../class.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+		<link rel="stylesheet" href="../css/styles.css">
+		<link rel="stylesheet" href="../css/materialize.min.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="../js/materialize.min.js"></script>
-		<script >
+		<script type="text/javascript" src="../class.js"></script>
+		<script>
 			var resort = new WeatherData("Kirkwood")
 			resort.displayRadar();
 			resort.displayWeatherInfo();
@@ -25,34 +19,40 @@
 
 	<body>
 		<header>
-
-			<!--  -->
-			<ul id="dropdown1" class="dropdown-content">
-				<li><a href="../index.html">Home</a></li>
-				<li class="divider"></li>
-	  		<li value="Olympic_Valley"><a href="squaw.html">Squaw Valley</a></li>
-	  		<li class="divider"></li>
-	  		<li value= "South_Lake_Tahoe"><a href="heavenly.html">Heavenly</a></li>
-			</ul>
-
 			<nav>
-	  		<div class="nav-wrapper #80deea cyan lighten-3">
-	    		<div class="brand-logo black-text text-darken-2">Lake Tahoe Skiing</div>
-
+				<ul id="dropdown1" class="dropdown-content">
+					<li><a href="../index.html">Home</a></li>
+					<li class="divider"></li>
+		  		<li value="Olympic_Valley"><a href="squaw.html">Squaw Valley</a></li>
+		  		<li class="divider"></li>
+		  		<li value= "South_Lake_Tahoe"><a href="heavenly.html">Heavenly</a></li>
+				</ul>
+	  		<div class="nav-wrapper #00838f cyan darken-3">
+	    		<div class="brand-logo black-text text-darken-2">
+						Lake Tahoe Skiing
+					</div>
 	    		<ul class="right hide-on-med-and-down">
-	      <!-- Dropdown Trigger -->
 						<li><a class="dropdown-button black-text text-darken-2" data-activates="dropdown1">Resorts<i class="material-icons right"></i></a></li>
 	    		</ul>
-
 	  		</div>
 			</nav>
 		</header>
 
 		<main>
-			<h2>Welcome!</h2>
-			<h4>Kirkwood</h4>
+			<h2>Kirkwood</h2>
+			<div class="current_weatherContainer">
+			</div>
+			<div class="radarContainer">
+			</div>
+			<div class="forecastContainer">
+			</div>
+			<div class="twitterContainer">
+				<a class="twitter-timeline"  href="https://twitter.com/search?q=Kirkwood%20Ski" data-widget-id="865326916806389760">Tweets about Kirkwood Ski</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
 		</main>
+		<footer>
 
+		</footer>
 	</body>
-
 </html>
