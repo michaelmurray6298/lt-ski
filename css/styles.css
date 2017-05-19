@@ -115,6 +115,33 @@ p{
 	width: 15%;
 	left: 5px;
 }
+#home{
+	position: absolute;
+	width: 1000px;
+	left: 400px;
+	top: 100px;
+}
+#info{
+	position: absolute;
+	width: 1000px;
+	left: 400px;
+	bottom: 100px;
+}
+#kirkMap{
+	position: absolute;
+	top: 620px;
+	right: 700px;
+}
+#squawMap{
+	position: absolute;
+	top: 900px;
+	right: 700px;
+}
+#heavenlyMap{
+	position: absolute;
+	top: 880px;
+	right: 700px;
+}
 #trailMap1{
 	position: absolute;
 	width: 1000px;

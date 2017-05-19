@@ -3,19 +3,26 @@
 	<head>
 		<meta charset="utf-8">
 		<title>LT SKI</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/materialize.min.css">
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
 		<script type="text/javascript" src="class.js"></script>
+		<script>
+			var resort = new WeatherData("Tahoe_City")
+			resort.displayRadar();
+			resort.displayWeatherInfo();
+			resort.displayForecastInfo();
+		</script>
 	</head>
 
 	<body>
 		<header>
 			<nav>
 				<ul id="dropdown1" class="dropdown-content">
-		  		<li value="Olympic_Valley"><a href="resorts/squaw.html">Squaw Valley</a></li>
+					<li value="Olympic_Valley"> <a href="resorts/squaw.html">Squaw Valley</a></li>
 					<li class="divider"></li>
 		  		<li value='Kirkwood'><a href="resorts/kirkwood.html">Kirkwood</a></li>
 		  		<li class="divider"></li>
@@ -25,18 +32,77 @@
 	    		<div class="brand-logo black-text text-darken-2" id="title">
 						Lake Tahoe Skiing
 					</div>
-					<ul class="right hide-on-med-and-down">
-						<li><a class="dropdown-button black-text text-darken-2" data-activates="dropdown1">Resorts<i class="material-icons
-						right"></i></a></li>
+	    		<ul class="right hide-on-med-and-down">
+						<li><a class="dropdown-button black-text text-darken-2" data-activates="dropdown1">Resorts<i class="material-icons right"></i></a></li>
 	    		</ul>
 	  		</div>
 			</nav>
 		</header>
 
 		<main>
-			<h2>Welcome!</h2>
+			<h2>Lake Tahoe</h2>
+			<div class="current_weatherContainer">
+			</div>
+			<div class="radarContainer">
+			</div>
+			<div class="forecastContainer">
+			</div>
+			<div class="twitterContainer z-depth-5">
+				<a class="twitter-timeline"  href="https://twitter.com/search?q=Lake%20Tahoe" data-widget-id="865594241132617729">Tweets about Lake Tahoe</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
+			<!-- <div>
+				<img  class="trailMap1" src="../img/1356844221.jpg">
+			</div> -->
+			<div class="container center-align" id="home">
+				<div class="card sticky-action medium">
+    			<div class="card-image waves-effect waves-block waves-light">
+    			  <img class="activator" id="pic1"src="img/IMG_0575.JPG">
+  			  </div>
+    		<div class="card-content">
+      		<span class="card-title activator blue-text darken-3">About the Site<i class="material-icons right"></i></span>
+    		</div>
+  		  <div class="card-reveal">
+    		  <span class="card-title grey-text text-darken-4">Lake Tahoe Skiing<i class="material-icons blue-text darken-3 right">close</i></span>
+					<p>
+						We provide accurate, up-to-date weather information and forecasts for the Lake Tahoe Area, including it's biggest resorts; Squaw, Heavenly, and Kirkwood.
+					</p>
+  	  	</div>
+	  	</div>
+		</div>
+		<div class="container" id="info">
+			<div class="row">
+				<div class="col s4 center-align">
+					<h4 class="blue-text darken-3">
+						<i class="large material-icons ">terrain</i>
+					Trail Map
+				</h4>
+					<p>
+						Check out the trail maps to plan your day!
+					</p>
+				</div>
+				<div class="col s4 center-align">
+					<h4 class="blue-text darken-3t">
+						<i class="large material-icons">near_me</i>
+						Directions
+					</h4>
+						<p>
+							Get directions to your Favorite Resort
+						</p>
+				</div>
+				<div class="col s4 center-align">
+					<h4 class = "blue-text darken-3">
+						<i class="large material-icons">whatshot</i>
+					the Feed</h4>
+					<p>
+						Check out what people are saying on the mountain!
+					</p>
+				</div>
+			</div>
+		</div>
 		</main>
+		<footer>
+
+		</footer>
 	</body>
-	<footer>
-	</footer>
 </html>
