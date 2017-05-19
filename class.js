@@ -11,6 +11,7 @@ class WeatherData{
 			.then(response => {
 				this.radar = $("<div>").addClass('radar');
 				var img = $('<img>')
+				img.addClass("radarImg")
 				img.attr('src', URL.createObjectURL(response))
 				this.radar.append(img)
 				$('.radarContainer').append(this.radar);
@@ -24,7 +25,7 @@ class WeatherData{
 	}
 	displayWeatherInfo(){
 		return this.getWeatherInfo().then(response => {
-			this.currentWeather = $('<div>').addClass('currentWeather');
+			this.currentWeather = $('<div>').addClass('currentWeather z-depth-5');
 			this.currentWeather.append($('<div>').text(("Current Condtions:")));
 			this.currentWeather.append($('<div>').text((response.current_observation.display_location.full)));
 			this.currentWeather.append($('<div>').text((response.current_observation.weather)));
@@ -41,7 +42,7 @@ class WeatherData{
 	}
 	displayForecastInfo(){
 		return this.getForecastInfo().then(response => {
-			this.forecast = $('<div>').addClass('forecast');
+			this.forecast = $('<div>').addClass('forecast z-depth-5');
 			this.forecast1 =$('<div>').addClass("day1_container")
 			this.forecast2 =$('<div>').addClass("day2_container")
 			this.forecast3 =$('<div>').addClass("day3_container")
@@ -53,7 +54,7 @@ class WeatherData{
 			this.forecast9 =$('<div>').addClass("day9_container")
 			this.forecast10 =$('<div>').addClass("day10_container")
 
-			this.forecast.append($('<div>').text(("10 Day Forecast:")));
+			this.forecast.append($('<div>').addClass("tenDay center-align").text(("10 Day Forecast")));
 			this.forecast1.append($('<div>').addClass("day_container").text((response.forecast.simpleforecast.forecastday[0].date.pretty)));
 			this.forecast1.append($('<div>').text(("High: " + response.forecast.simpleforecast.forecastday[0].high.fahrenheit + "ºF")));
 			this.forecast1.append($('<div>').text(("Low: " + response.forecast.simpleforecast.forecastday[0].low.fahrenheit + "ºF")));

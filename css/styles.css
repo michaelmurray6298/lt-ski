@@ -1,84 +1,135 @@
 nav{
 	font-family: 'Dosis', sans-serif;
-	font-size: 50px;
 }
+
 body{
 	font-family: 'Dosis', sans-serif;
 }
-
-.dropdown-button{
-	position: static;
-	font-size: 30px;
-	right: 210px;
-}
-.forecast{
-	font-size: 30px;
-	position: absolute;
-	top: 400px;
-	right: 10px;
-	border: solid #54CDE8 5px;
-	padding: 10px;
+.tenDay{
+	border: solid #228A37 2px;
+	width: 99.75%;
 }
 .day1_container{
 	font-size: 20px;
-	border: solid #228A37 2px;
+	border-left: solid #228A37 2px;
+	border-right: solid #228A37 2px;
+	border-bottom: solid #228A37 2px;
+	width: 99.75%;
 	padding: 10px;
 }
 .day2_container{
 	font-size: 20px;
 	border: solid #228A37 2px;
+	width: 99.75%;
 	padding: 10px;
 }
 .day3_container{
 	font-size: 20px;
 	border: solid #228A37 2px;
+	width: 99.75%;
 	padding: 10px;
 }
 .day4_container{
 	font-size: 20px;
 	border: solid #228A37 2px;
+	width: 99.75%;
 	padding: 10px;
 }
 .day5_container{
 	font-size: 20px;
 	border: solid #228A37 2px;
+	width: 99.75%;
 	padding: 10px;
 }
 .day6_container{
 	font-size: 20px;
 	border: solid #228A37 2px;
+	width: 99.75%;
 	padding: 10px;
 }
 .day7_container{
 	font-size: 20px;
 	border: solid #228A37 2px;
+	width: 99.75%;
 	padding: 10px;
 }
 .day8_container{
 	font-size: 20px;
 	border: solid #228A37 2px;
+	width: 99.75%;
 	padding: 10px;
 }
 .day9_container{
 	font-size: 20px;
 	border: solid #228A37 2px;
+	width: 99.75%;
 	padding: 10px;
 }
 .day10_container{
 	font-size: 20px;
 	border: solid #228A37 2px;
+	width: 99.75%;
 	padding: 10px;
 }
 .currentWeather{
+	position: relative;
 	font-size: 20px;
 	width: 15%;
-	position: relative;
 	left: 5px;
-	border: solid #54CDE8 2px;
+	margin-bottom: 20px;
 	padding: 10px;
+}
+.dropdown-button{
+	position: absolute;
+	font-size: 40px;
+	right: 125px;
+}
+#title{
+	font-size: 40px;
+}
+h2{
+	text-shadow: 4px 4px #BCBFBF;
+}
+p{
+	font-size: 20px;
+}
+.forecast{
+	position: absolute;
+	font-size: 30px;
+	width: 20%;
+	top: 400px;
+	right: 10px;
+}
+.radarImg{
+	position: inherit;
+	box-shadow: 10px 10px 5px #888888;
 }
 .radar{
 	position: absolute;
+	top: 80px;
+	right: 350px;
+}
+
+.twitterContainer{
+	position: relative;
+	width: 15%;
+	left: 5px;
+}
+#trailMap1{
+	position: absolute;
+	width: 1000px;
+	left: 400px;
 	top: 100px;
-	right: 10px;
+}
+#trailMap2{
+	position: absolute;
+	width: 1000px;
+	left: 400px;
+	top: 100px;
+}
+#trailMap3{
+	position: absolute;
+	width: 1000px;
+	left: 400px;
+	top: 100px;
 }
